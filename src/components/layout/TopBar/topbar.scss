@@ -1,0 +1,10 @@
+@use "src/styles/variables";
+
+.topbar {
+  background-color: rgb(161, 139, 235);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: variables.$headerHeight;
+}
