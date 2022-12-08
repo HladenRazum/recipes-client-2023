@@ -1,14 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { ROUTES } from "../../../routes";
 
 type Props = {};
 
 const Navigation = (props: Props) => {
   return (
-    <nav>
+    <nav className='Navigation'>
       <ul>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/account'>Account</NavLink>
+        <li>
+          <NavLink to={ROUTES.HOME.path}>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to={ROUTES.LOGIN.path}>Login</NavLink>
+        </li>
+        <li>
+          <NavLink to={ROUTES.REGISTER.path}>Register</NavLink>
+        </li>
+        <li>
+          <NavLink to={ROUTES.ACCOUNT.path}>Account</NavLink>
+        </li>
       </ul>
     </nav>
   );

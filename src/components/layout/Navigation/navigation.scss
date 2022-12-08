@@ -1,0 +1,18 @@
+.Navigation {
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+  }
+
+  a {
+    color: rgb(118, 118, 252);
+    text-decoration: none;
+  }
+
+  a.active {
+    color: rgb(65, 65, 206);
+    text-decoration: underline;
+  }
+}

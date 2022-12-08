@@ -2,6 +2,7 @@
 
 @import url("../components/layout/Footer/footer.scss");
 @import url("../components/layout/TopBar/topbar.scss");
+@import url("../components/layout/Navigation/navigation.scss");
 
 $headerHight: 66px;
 
@@ -11,8 +12,11 @@ $headerHight: 66px;
   padding: 0;
 }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .app {
-  background-color: rgb(229, 229, 229);
   padding-top: variables.$headerHeight;
   width: 100%;
   height: 100%;
