@@ -43,8 +43,8 @@ const registerUser = async (formData: Inputs) => {
 const RegisterForm = (props: Props) => {
   const { register, handleSubmit } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = async (data) => {
-    await registerUser(data);
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    registerUser(data);
   };
 
   return (
